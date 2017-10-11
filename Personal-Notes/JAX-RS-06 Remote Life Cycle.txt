@@ -1,0 +1,28 @@
+When a resource called by client program
+JAX-RS create an object and provide the service to the client
+Then created object are destroyed. So new object are created for every request. 
+
+but there has a way we can create service object once and 
+provide to the client the same object for every request.
+as follows..
+
+
+NOTE: annotation @Singleton
+URL: https://www.youtube.com/watch?v=nLylZ08h60A
+==================================================================
+@Path("test")
+@Singleton
+public class Service {
+	
+	private int Count;
+	
+	//http://localhost:8989/JAX-RS/rest/test
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String getTestmessage(){
+		Count = Count + 1;
+		return "Testing message! Requested "+Count+ " time(s).";
+	}
+}	
+
+==================================================================	 
