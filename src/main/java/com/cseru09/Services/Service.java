@@ -24,7 +24,7 @@ public class Service {
 						pathParamValue	+ "\n"	+
 						"Query 01: " 	+
 						qurey01	+	"\n"	+
-						"Quer y02: " 	+
+						"Query 02: " 	+
 						qurey02;
 		return "Testing message!\n"+req;
 	}
