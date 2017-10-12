@@ -1,12 +1,13 @@
-package com.cseru09.Services;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.MediaType;
+Path param and query param Example:
+The {pathParam} in the Path annotation lets you map a resource
+to a variable path pattern.
 
+Note: So Singleton will not be work. Because here after getting request from browser
+object will be created and serve to the client
+https://www.youtube.com/watch?v=P-f6C1tHMDM&t=305s
+
+==============================================================================================
 @Path("{varPathParam}/test")
 public class Service {
 	
@@ -29,3 +30,4 @@ public class Service {
 		return "Testing message!\n"+req;
 	}
 }
+==============================================================================================
