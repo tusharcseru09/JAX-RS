@@ -16,7 +16,7 @@ public class Service {
 	
 
 	
-	//http://localhost:8989/JAX-RS/rest/jklsiddiab/test?varQuery01=Abu&varQuery02=Siddique
+	//http://localhost:8989/JAXRS/rest/jklsiddiab/test?varQuery01=Abu&varQuery02=Siddique
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getTestmessage(){

@@ -10,14 +10,12 @@ import javax.ws.rs.core.MediaType;
 import com.cseru09.Repository.Employee;
 import com.cseru09.Repository.EmployeeImp;
 
-
-
 @Path("/employee")
 public class EmpServiceProvider {
 	
 	private int Count;
 	
-	//http://localhost:8989/JAX-RS/rest/employee
+	//http://localhost:8989/JAXRS/rest/employee
 	@GET
 	@Produces
 	public String getMessage(){
@@ -25,7 +23,7 @@ public class EmpServiceProvider {
 		return "Plain text. Requested by " + Count + " time(s).";
 	}
 	
-	//http://localhost:8989/JAX-RS/rest/employee/employeelist
+	//http://localhost:8989/JAXRS/rest/employee/employeelist
 	@GET
 	@Path("/employeelist")
 	@Produces({MediaType.APPLICATION_XML})
@@ -43,13 +41,5 @@ public class EmpServiceProvider {
 		return empList;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-
 }
 

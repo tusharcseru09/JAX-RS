@@ -12,7 +12,7 @@ import com.cseru09.ParamConverter.MyDate;
 public class DateResource {
 
 	
-	//http://localhost:8989/JAX-RS/rest/date/tomorrow
+	//http://localhost:8989/JAXRS/rest/date/yesterday
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getDateString(@PathParam("dateString") MyDate dateStr){
