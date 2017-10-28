@@ -1,0 +1,25 @@
+	
+	/*
+	 * Md. Abu Bakkar Siddique - Tushar
+	 */
+	 
+	 
+#	JAX-RS is a Java programming language API designed to make it easy to develop applications 
+that use the REST architecture.
+
+#	JAX-RS annotations are runtime annotations; therefore, runtime reflection will generate the 
+helper classes and artifacts for the resource.Java Reflection is a process of examining or 
+modifying the run time behavior of a class at run time.
+
+#	Annotations that are defined by JAX-RS
+
+@Path: 	The @Path annotation’s value is a relative URI path indicating 
+		where the Java class will be hosted: for example, /helloworld.
+		
+@GET,@POST,@PUT,@HEAD and @DELETE:	The Java method annotated with these request method designator 
+will process corresponding HTTP GET,POST,PUT,HEAD and DELETE requests.
+
+@PathParam @QueryParam @Consumes @Produces @Provider
+
+
+
